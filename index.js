@@ -21,6 +21,8 @@ function showWeather(response) {
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#description").innerHTML = response.data.weather[0].main;
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute("src", 'http://openweathermap.org/img/wn/042@sx.png');
 }
 
 function search(city) {
