@@ -48,6 +48,12 @@ h4 {
   padding: 0px 0px 10px 0px;
 }
 
+.forecast {
+  color: #07689f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 p.quote {
   color: #40a8c4;
   font-weight: bold;
