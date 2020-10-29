@@ -20,8 +20,8 @@ h2 {
 #icon {
   color: #07689f;
   font-size: 60px;
-  padding: 20px 30px 20px 30px;
-  margin: 30px 30px 40px 30px;
+  padding: 20px 30px 20px 20px;
+  margin: 30px 30px 40px 20px;
   width: 60%;
 }
 .temperature {
