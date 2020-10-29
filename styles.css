@@ -40,14 +40,14 @@ h4 {
   color: black;
   font-size: 15px;
   font-weight: bold;
-  padding: 20px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
 }
 
 .humidity {
   color: #07689f;
   font-size: 20px;
   font-weight: bold;
-  padding: 70px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
 }
 
 .wind {
