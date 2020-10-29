@@ -90,6 +90,11 @@ div.container {
   margin: 15px 0px 0px 0px;
 }
 
+.fa-compass {
+  font-size: 10px;
+  color: #ffff;
+}
+
 div.buttons {
   margin: -6px 0px 10px 0px;
 }
