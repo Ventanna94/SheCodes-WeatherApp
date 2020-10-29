@@ -43,18 +43,11 @@ h5 {
   margin: -2px 10px 15px 0px;
 }
 
-.update {
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 25px 0px 0px 0px;
-}
-
 .humidity {
   color: #07689f;
   font-size: 20px;
   font-weight: bold;
-  padding: 37px 0px 0px 0px;
+  padding: 65px 0px 0px 0px;
 }
 
 .wind {
