@@ -75,7 +75,7 @@ button.btn-outline-info {
   border: 2px solid #07689f;
   background-color: #07689f;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 
 div.container {
@@ -91,7 +91,7 @@ div.container {
 }
 
 .fa-compass {
-  font-size: 10px;
+  font-size: 15px;
   color: #ffff;
 }
 
