@@ -22,9 +22,7 @@ h2 {
   font-size: 60px;
   padding: 20px 30px 20px 30px;
   margin: 30px 30px 40px 30px;
-  border: 3px solid #07689f;
-  border-radius: 10px;
-  width: 100%;
+  width: 60%;
 }
 .temperature {
   color: #07689f;
