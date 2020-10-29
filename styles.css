@@ -36,6 +36,13 @@ h4 {
   margin: -5px 10px 15px 0px;
 }
 
+.update {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 0px 0px 0px;
+}
+
 .humidity {
   color: #07689f;
   font-size: 20px;
