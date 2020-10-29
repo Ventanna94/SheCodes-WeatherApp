@@ -21,6 +21,7 @@ h2 {
   color: #07689f;
   font-size: 60px;
   padding: 40px 30px 40px 0px;
+  border: 1px solid #07689f;
 }
 .temperature {
   color: #07689f;
