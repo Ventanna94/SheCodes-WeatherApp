@@ -74,6 +74,7 @@ h5 {
   border: none;
   box-shadow: 4px 4px 4px grey;
   color: black;
+  margin-bottom: 15px;
 }
 
 button.btn-outline-info {
