@@ -31,7 +31,7 @@ function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
     let forecast = response.data.list[0];
     forecastElement.innerHTML = `
-        <div class="col-2">
+        <div class="col-4">
             <h4 class="forecast-day"> Tomorrow </h4>
             <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
             <div class="forecast-temperature"> 
@@ -42,7 +42,7 @@ function displayForecast(response) {
 
     forecast = response.data.list[1];
     forecastElement.innerHTML += `
-        <div class="col-2">
+        <div class="col-4">
             <h4 class="forecast-day"> In 2 days </h4>
             <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
             <div class="forecast-temperature"> 
