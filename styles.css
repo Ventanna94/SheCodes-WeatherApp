@@ -70,6 +70,7 @@ h5 {
 }
 
 p.quote {
+  position: relative;
   color: #40a8c4;
   font-weight: bold;
   text-align: center;
