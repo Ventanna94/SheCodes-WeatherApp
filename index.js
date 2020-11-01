@@ -36,7 +36,6 @@ function displayForecast(response) {
             <div class="forecast-temperature"> <strong> 22° </strong> 17° </div>
         </div>
     `;
-
 }
 
 function search(city) {
