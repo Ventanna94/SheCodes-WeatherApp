@@ -91,6 +91,7 @@ div.container {
   margin: 20px auto;
   border-radius: 30px;
   max-width: 600px;
+  box-shadow: 4px 4px 4px grey;
 }
 
 #search-form {
