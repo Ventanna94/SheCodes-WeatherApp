@@ -15,6 +15,22 @@ let month = months[currentTime.getMonth()];
 let h2 = document.querySelector("h2");
 h2.innerHTML = `${date} ${month} | ${hour}:${minutes}`
 
+function formatHours(timestamp) {
+    let currentTime = new Date(timestamp);
+    let hour = currentTime.getHours();
+    if (hour <10) {
+        hour = `0${hour}`;
+    }
+    let minutes = currentTime.getMinutes();
+    if (minutes < 10) {
+    minutes = `0${minutes}`
+    }
+    return ${hours}:${minutes}
+
+}
+
+
+
 function showWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
@@ -33,8 +49,8 @@ function displayForecast(response) {
 
     forecastElement.innerHTML = `
         <div class="col-2">
-            <h3> 12:00 </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" />
+            <h4> ${formatHours(forecast.dt * 1000)} </h4>
+            <img src="${http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
             <div class="forecast-temperature"> <strong> ${Math.round(forecast.main.temp_max)}° </strong> ${Math.round(forecast.main.temp_min)}° </div>
         </div>
     `;
