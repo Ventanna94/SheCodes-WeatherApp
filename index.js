@@ -27,7 +27,19 @@ function showWeather(response) {
     document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
 }
 
-function displayForecast()
+function displayForecast(response) {
+    let forecastElement = document.querySelector("#forecast");
+    let forecast = response.data.list[0];
+    forecastElement.innerHTML = `
+        <div class="col-2">
+            <h3> 12:00 </h3>
+            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" />
+            <div class="forecast-temperature"> <strong> 22° </strong> 17° </div>
+        </div>
+    `;
+
+
+}
 
 function search(city) {
     let apiKey = "2547a6a5f6c6d363e76bf41f4f629620";
