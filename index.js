@@ -27,7 +27,7 @@ function showWeather(response) {
     document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
     let dailyAdvice = document.querySelector("#advice");
     if (response.data.main.temp < 15) {dailyAdvice.innerHTML = "👉🏻Pack up warm!";}
-    else {dailyAdvice.innerHTML = "👉🏻Leave your coat at home!";}
+    else {dailyAdvice.innerHTML = "👉🏻Forget your coat!";}
 }
 
 function displayForecast(response) {
