@@ -25,11 +25,9 @@ function formatHours(timestamp) {
     if (minutes < 10) {
     minutes = `0${minutes}`
     }
-    return ${hours}:${minutes}
+    return `${hour}:${minutes}`;
 
 }
-
-
 
 function showWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
