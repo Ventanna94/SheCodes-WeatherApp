@@ -96,8 +96,8 @@ button.btn-outline-info {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-  height: 24px;
-  width: 24px;
+  height: 48px;
+  width: 48px;
 }
 
 div.container {
