@@ -32,8 +32,10 @@ function displayForecast(response) {
     forecastElement.innerHTML = `
         <div class="col-2">
             <h3> 12:00 </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" />
-            <div class="forecast-temperature"> <strong> 22° </strong> 17° </div>
+            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
+            <div class="forecast-temperature"> 
+            <strong> ${Math.round(forecast.main.temp_max)}° </strong> 
+            ${Math.round(forecast.main.temp_min)}° </div>
         </div>
     `;
 }
