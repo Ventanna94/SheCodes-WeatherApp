@@ -32,7 +32,7 @@ function displayForecast(response) {
     let forecast = response.data.list[0];
     forecastElement.innerHTML = `
         <div class="col-2">
-            <h4 class="forecast-day"> 12:00 </h4>
+            <h4 class="forecast-day"> Tomorrow </h4>
             <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
             <div class="forecast-temperature"> 
             <strong> ${Math.round(forecast.main.temp_max)}° </strong> 
