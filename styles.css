@@ -69,15 +69,6 @@ h5 {
   font-weight: bold;
 }
 
-p.quote {
-  position: relative;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  font-size: 15px;
-  margin: 50px 0px 10px 0px;
-}
-
 button.btn-outline-info {
   border: 2px solid #07689f;
   background-color: #07689f;
