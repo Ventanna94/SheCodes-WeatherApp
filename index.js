@@ -25,6 +25,8 @@ function showWeather(response) {
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
     iconElement.setAttribute("alt", response.data.weather.main);
     document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
+    let dailyAdvice = document.querySelector("#advice");
+    dailyAdvice.innerHTML = "It's cold today";
 }
 
 function displayForecast(response) {
