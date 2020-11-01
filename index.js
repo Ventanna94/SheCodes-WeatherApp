@@ -26,7 +26,8 @@ function showWeather(response) {
     iconElement.setAttribute("alt", response.data.weather.main);
     document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
     let dailyAdvice = document.querySelector("#advice");
-    dailyAdvice.innerHTML = "It's cold today";
+    if (response.data.main.temp < 10) {dailyAdvice.innerHTML = "It's cold today";}
+    else {dailyAdvice.innerHTML = "It's warm today!";}
 }
 
 function displayForecast(response) {
