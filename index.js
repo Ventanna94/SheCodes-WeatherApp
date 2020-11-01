@@ -1,25 +1,19 @@
-function formatDate(timestamp) {
-    let date = new Date(timestamp);
-
-    let months =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    let month = months[date.getMonth()];
-
-    return `${month} | ${formatHours(timestamp)}`;
+let currentTime = new Date();
+let date = currentTime.getDate();
+let hour = currentTime.getHours();
+if (hour < 10) {
+    hour = `0${hour}`;
 }
-
-function formatHours(timestamp) {
-    let date = new Date(timestamp);
-    let hour = date.getHours();
-    if (hour <10) {
-        hour = `0${hour}`;
-    }
-    let minutes = date.getMinutes();
-    if (minutes < 10) {
+let minutes = currentTime.getMinutes();
+if (minutes < 10) {
     minutes = `0${minutes}`
-    }
+} 
 
-    return `${hour}:${minutes}`;
-}
+let months =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+let month = months[currentTime.getMonth()];
+
+let h2 = document.querySelector("h2");
+h2.innerHTML = `${date} ${month} | ${hour}:${minutes}`
 
 function showWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
@@ -35,26 +29,14 @@ function showWeather(response) {
 
 function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
-    forecastElement.innerHTML = null;
-    let forecast = null;
-
-    for (let index = 0; index < 6; index++) { 
-        forecast = response.data.list[index];
-        forecastElement.innerHTML += `
+    forecastElement.innerHTML = `
         <div class="col-2">
-            <h4> ${formatHours(forecast.dt * 1000)} 
-            </h4>
-            <img src="${http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" 
-            />
-            <div class="forecast-temperature"> 
-            <strong> 
-            ${Math.round(forecast.main.temp_max)}° 
-            </strong> 
-            ${Math.round(forecast.main.temp_min)}° 
-            </div> 
-        </div> 
-    `; 
-    }
+            <h3> 12:00 </h3>
+            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" />
+            <div class="forecast-temperature"> <strong> 22° </strong> 17° </div>
+        </div>
+    `;
+
 }
 
 function search(city) {
@@ -68,9 +50,20 @@ function search(city) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    let city = document.querySelector("#search-city-input");
-    search(city.value);
+    let city = document.querySelector("#search-city-input").value;
+    search(city);
 } 
+
+function searchLocation (position) {
+let apiKey = "2547a6a5f6c6d363e76bf41f4f629620";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+ axios.get(apiUrl).then(showWeather)}
+
+
+function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
@@ -79,3 +72,4 @@ let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", getCurrentLocation);
 
 search("Milan");
+
