@@ -39,6 +39,18 @@ function displayForecast(response) {
             ${Math.round(forecast.main.temp_min)}° </div>
         </div>
     `;
+
+    forecast = response.data.list[1];
+    forecastElement.innerHTML += `
+        <div class="col-2">
+            <h4 class="forecast-day"> In 2 days </h4>
+            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
+            <div class="forecast-temperature"> 
+            <strong> ${Math.round(forecast.main.temp_max)}° </strong> 
+            ${Math.round(forecast.main.temp_min)}° </div>
+        </div>
+        `;
+
 }
 
 function search(city) {
