@@ -63,6 +63,12 @@ h5 {
   font-weight: bold;
 }
 
+h3.forecast-day {
+  color: #07689f;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 p.quote {
   color: #40a8c4;
   font-weight: bold;
