@@ -61,6 +61,7 @@ h5 {
   color: #40a8c4;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .forecast-day {
@@ -89,7 +90,7 @@ button.btn-outline-info {
   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   padding: 0px 20px 5px 20px;
   margin: 20px auto;
-  border-radius: 30px;
+  border-radius: 40px;
   box-shadow: 8px 8px 8px grey;
 }
 
