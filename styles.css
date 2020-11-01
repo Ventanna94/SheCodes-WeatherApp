@@ -104,9 +104,10 @@ button.btn-outline-info {
 
 #advice {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #07689f;
-  font-size: 30px;
+  font-size: 25px;
+  padding-top: 10px;
 }
 
 div.container {
