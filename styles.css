@@ -102,6 +102,13 @@ button.btn-outline-info {
   width: 60px;
 }
 
+#advice {
+  text-align: center;
+  margin-top: 15px;
+  color: #07689f;
+  font-size: 30px;
+}
+
 div.container {
   max-width: 624px;
 }
