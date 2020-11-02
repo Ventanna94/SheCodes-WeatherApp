@@ -13,7 +13,7 @@ let months =["January", "February", "March", "April", "May", "June", "July", "Au
 let month = months[currentTime.getMonth()];
 
 let h2 = document.querySelector("h2");
-h2.innerHTML = `${date} ${month} | ${hour}:${minutes}`
+h2.innerHTML = `<i class="fas fa-calendar-day"></i> ${date} ${month} | ${hour}:${minutes}`
 
 function showWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
