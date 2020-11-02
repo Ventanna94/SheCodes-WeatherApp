@@ -17,6 +17,14 @@ h2 {
   text-align: left;
   margin: 20px 0px 0px 0px;
 }
+
+.fa-calendar-day {
+  color: #40a8c4;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
 #icon {
   color: #07689f;
   height: 150px;
