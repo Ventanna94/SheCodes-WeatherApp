@@ -59,7 +59,7 @@ h5 {
   font-size: 20px;
   font-weight: bold;
   padding: 10px 0px 0px 0px;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .fa-tint {
@@ -157,4 +157,5 @@ footer {
   text-align: center;
   font-weight: bold;
   margin: -10px;
+  color: #ffff;
 }
