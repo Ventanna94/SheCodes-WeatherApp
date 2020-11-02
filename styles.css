@@ -53,7 +53,10 @@ h5 {
 
 img {
   position: relative;
+  margin-top: 10x;
   opacity: 0.5;
+  height: 100;
+  width: 300;
 }
 
 .humidity {
