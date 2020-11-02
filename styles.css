@@ -51,6 +51,11 @@ h5 {
   margin: -2px 10px 15px 0px;
 }
 
+img {
+  position: relative;
+  opacity: 0.5;
+}
+
 .humidity {
   color: #07689f;
   font-size: 20px;
