@@ -30,8 +30,7 @@ h2 {
 
 #icon {
   color: #07689f;
-  height: 150px;
-  width: 150px;
+  width: 100%;
   padding: 20px 30px 10px 20px;
   margin: 10px 30px 20px 20px;
 }
