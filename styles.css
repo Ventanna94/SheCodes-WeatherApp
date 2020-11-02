@@ -50,11 +50,25 @@ h5 {
   padding: 154px 0px 0px 0px;
 }
 
+.fa-tint {
+  color: #07689f;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
 .wind {
   color: #07689f;
   font-size: 20px;
   font-weight: bold;
   padding: 0px 0px 28px 0px;
+}
+
+.fa-wind {
+  color: #07689f;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
 }
 
 .forecast {
