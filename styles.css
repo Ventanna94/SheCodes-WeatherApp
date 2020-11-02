@@ -49,9 +49,16 @@ h4 {
 
 h5 {
   color: black;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   margin: -2px 10px 15px 0px;
+}
+
+.fa-tshirt {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
 }
 
 .humidity {
