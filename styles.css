@@ -1,5 +1,8 @@
 body {
   font-family: "Bellota", cursive;
+  background-image: url("img/pinetrees.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -49,13 +52,6 @@ h5 {
   font-size: 15px;
   font-weight: bold;
   margin: -2px 10px 15px 0px;
-}
-
-img {
-  position: relative;
-  margin-top: 10px;
-  opacity: 0.5;
-  font-size: 35px;
 }
 
 .humidity {
